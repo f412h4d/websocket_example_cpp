@@ -1,0 +1,13 @@
+project
+    : requirements
+    <library>ssl
+    <library>crypto
+    ;
+
+exe websocket-client-async-ssl :
+    websocket_client_async_ssl.cpp
+    :
+    <variant>coverage:<build>no
+    <variant>ubasan:<build>no
+    ;
+
